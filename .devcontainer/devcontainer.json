@@ -15,9 +15,12 @@
       "version": "latest",
       "tflint": "latest",
       "terragrunt": "none"
+    },
+    "ghcr.io/devcontainers/features/node:1": {
+      "version": "lts"
     }
   },
-  "postCreateCommand": "aws --version && ruby --version && java --version && terraform --version",
+  "postCreateCommand": "aws --version && ruby --version && java --version && terraform --version && node --version && npm install -g aws-cdk && cdk --version",
   "customizations": {
     "vscode": {
       "extensions": [
