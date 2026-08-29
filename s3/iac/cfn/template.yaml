@@ -1,0 +1,9 @@
+AWSTemplateFormatVersion: "2010-09-09"
+Description: "S3 Sample"
+# https://docs.aws.amazon.com/AWSCloudFormation/latest/UserGuide/template-formats.html
+Resources:
+  S3Bucket:
+    Type: 'AWS::S3::Bucket'
+    DeletionPolicy: Retain
+#    Properties:
+#      BucketName: DOC-EXAMPLE-BUCKET

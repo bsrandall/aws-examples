@@ -2,13 +2,27 @@
   "name": "Gitpod AWS CLI Environment",
   "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
   "features": {
-  "ghcr.io/devcontainers/features/aws-cli:1": {}
+  "ghcr.io/devcontainers/features/aws-cli:1": {},
+  "ghcr.io/devcontainers/features/ruby:1": {
+      "version": "3.3"
+    },
+    "ghcr.io/devcontainers/features/java:1": {
+      "version": "21",
+      "installMaven": true,
+      "installGradle": true
+    },
+    "ghcr.io/devcontainers/features/terraform:1": {
+      "version": "latest",
+      "tflint": "latest",
+      "terragrunt": "none"
+    }
   },
-  "postCreateCommand": "aws --version",
+  "postCreateCommand": "aws --version && ruby --version && java --version && terraform --version",
   "customizations": {
     "vscode": {
       "extensions": [
-        "amazonwebservices.aws-toolkit-vscode"
+        "amazonwebservices.aws-toolkit-vscode",
+        "hashicorp.terraform"
       ]
     }
   }
