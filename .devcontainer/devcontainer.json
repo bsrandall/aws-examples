@@ -25,7 +25,9 @@
     "vscode": {
       "extensions": [
         "amazonwebservices.aws-toolkit-vscode",
-        "hashicorp.terraform"
+        "hashicorp.terraform",
+        "redhat.vscode-yaml",
+        "vscodevim.vim"
       ]
     }
   }
