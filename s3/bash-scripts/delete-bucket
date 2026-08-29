@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+echo "== delete bucket"
+
+if [ -z "$1" ]; then
+    echo "Bucket name not sent"
+    exit 1
+fi
+
+BUCKET_NAME=$1
+
+aws s3api delete-bucket \
+--bucket $BUCKET_NAME
