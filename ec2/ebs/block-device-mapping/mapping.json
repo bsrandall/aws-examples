@@ -1,0 +1,22 @@
+[
+    {
+        "DeviceName": "/dev/xvda",
+        "Ebs": {
+            "VolumeSize": 100
+        }
+    },
+    {
+        "DeviceName": "/dev/sdj",
+        "NoDevice": ""
+    },
+    {
+        "DeviceName": "/dev/sdh",
+        "Ebs": {
+            "VolumeSize": 300
+        }
+    },
+    {
+        "DeviceName": "/dev/sdc",
+        "VirtualName": "ephemeral1"
+    }
+]
